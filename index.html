@@ -12,18 +12,29 @@
             width:1080px;
             height:auto;
         }
+        h1{
+color: gold;
+        }
     </style>
 </head>
 <body>
     <div id="shopping-list">
-        <img x-bind:src='image' />
+        <h1 > {{header}}</h1>
+        <img v-bind:src='image' />
+        <div>
+            <audio controls autoplay>
+                <source v-bind:src="music" />
+            </audio>/>
+
+        </div>
     </div>
 
     <script>
         var shoppinglist = new Vue({
             el: '#shopping-list',
             data: {
-                header: 'Vue is ready to party!',
+                header: 'Тағы көҙҙәр етте',
+                music: 'Илшат Сибәғәтуллин - Тағы көҙҙәр етте Зөһрә Рәхмәтуллина һүҙҙәре һәм көйө.mp3',
                 image: 'DSC_0783.JPG',
             }
         })
