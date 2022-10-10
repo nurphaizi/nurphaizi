@@ -10,7 +10,7 @@
 <body>
     <div id="shopping-list">
         {{ header }}
-        <input type="text" v-model="header" v-bind:value="input_text"/>
+        <img v-bind:src='image' height='1080px' width='auto'/>
     </div>
 
     <script>
@@ -18,7 +18,7 @@
       el: '#shopping-list',
       data: {
           header: 'Vue is ready to party!',
-          input_text: 'test',
+          image: 'DSC_0783.JPG',
       }
     })
     </script>
